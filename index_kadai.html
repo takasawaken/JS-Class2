@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>myMemoPad</title>
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <link rel='stylesheet' href='css/reset.css'>
+  <link rel="stylesheet" href="css/style_kadai.css">
+</head>
+
+<body>
+
+  <header>MyEnglishBook</header>
+
+  <div class="container">
+    <div class="nicewrap">
+      <input class="nicetextbox word" type="text" required placeholder="WORD">
+    </div>
+
+    <div class="nicewrap">
+      <input class="nicetextbox sentence" type="text" placeholder="SENTENCE">
+    </div>
+  </div>
+
+  <div class="save"><input type="submit" required value="Save" class="add" required></div>
+  <div class="clear"><input type="submit" value="Clear" class="delete"></div>
+
+  <div class="timer">時計</div>
+  <ul class="list">
+  </ul>
+
+  <script>
+    $(".save").on("click", function () {
+
+    const key = $(".word").val();
+    const value = $(".sentence").val();
+
+    console.log(key);
+    console.log(value);
+
+    localStorage.setItem(key, value);
+    const html =`<li><span> WORD:<br>${key}</span><br><span>SENTENCE:<br>${value}</span></li>`
+      
+    $(".list").append(html);
+
+    $(".word").val("");
+    $(".sentence").val("");
+    $(".timer").innerHTML;
+
+    });
+
+    $(".clear").on('click', function () {
+
+      localStorage.clear();
+      $(".list").empty();
+
+      $(".word").val("");
+      $(".sentence").val("");
+
+    });
+
+    localStorage.removeItem(".word", empty)
+
+
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      console.log(i);
+      const value = localStorage.getItem(key);
+      const html = `<li><span> WORD:<br>${key}</span><br><span>SENTENCE:<br>${value}</span></li>`
+      $(".list").append(html);
+    }
+  </script>
+
+</body>
+
+</html>

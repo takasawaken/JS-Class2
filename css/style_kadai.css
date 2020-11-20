@@ -1,0 +1,133 @@
+*{box-sizing: border-box;}
+
+html, body{
+
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #3cad7e;
+  font-family: 'Arial', sans-serif;
+}
+
+header{
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.nicewrap{
+  position: relative;
+  width: 500px;
+  height: 100px;
+  margin: auto;
+}
+
+.nicetextbox{
+  position: relative;
+  display: block;
+  width: 500px;
+  margin-top: 50px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color:black;
+  outline: none;
+}
+
+.add{
+    display       : inline-block;
+    border-radius : 18%;          /* 角丸       */
+    font-size     : 16pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 12px 17px;   /* 余白       */
+    background    :#3cad7e;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    border        : 1px solid #3cad7e;    /* 枠の指定 */
+
+}
+
+.delete{
+    display       : inline-block;
+    border-radius : 18%;          /* 角丸       */
+    font-size     : 16pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 12px 17px;   /* 余白       */
+    background    :#3cad7e;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    border        : 1px solid #3cad7e;    /* 枠の指定 */
+
+}
+
+.submit:hover {
+    color         : #000066;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
+}
+
+.save{
+    text-align: center;
+}
+
+.clear{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.list{
+    margin-top: 50px;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.timer{
+    text-align: center;
+    margin: 50px auto;
+    font-size: 50px;
+    color: #ffffff;
+    border-block: 1px solid #ffffff;
+}
+
+
+.list {
+    width: 90%;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.list li {
+    display: flex;
+    padding: 0;
+    color: #ffffff;
+}
+
+.list li:hover {
+    background: none;
+}
+
+.list li span {
+    display: block;
+    color: #000;
+    padding: 20px;
+    width: 50%;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.list li span:first-child {
+    color:#ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+
